@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <section id="game-zone">
+      <figure>
+        <figcaption>Jugador 1</figcaption>
+        <img id ="playerChoice" src="images/paper.png" alt="Eleccion del jugador1" />
+      </figure>
+      <figure>
+        <figcaption>Jugador 2</figcaption>
+        <img id="playerChoice2" src="images/rock.png" alt="Eleccion del jugador2" />
+      </figure>
+    </section>
+    <p id="result">
+      Has empatado usando <strong>Tijeras</strong> en contra de
+      <strong>Tijeras</strong>.
+    </p>
+    <p id="score">
+      Has ganado <strong>0</strong> veces. Has perdido
+      <strong>0</strong> veces.
+    </p>
+
+    <section>
+      <p>Escoge una opcion para jugar</p>
+      <button data-choice="Papel">
+        <img src="images/paper.png" alt="jugar usando papel" />
+      </button>
+      <button data-choice="Piedra">
+        <img src="images/rock.png" alt="jugar usando piedra" />
+      </button>
+      <button data-choice="Tijeras">
+        <img src="images/scissors.png" alt="jugar usando tijeras" />
+      </button>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
