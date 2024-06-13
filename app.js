@@ -39,13 +39,13 @@ function StarGame(event) {
 
     let result;
     if (playerWinner === 'player1') {
-        result = 'ganado';
+        result = 'ganados';
         ++positiveScore;
     } else if (playerWinner === 'player2') {
-        result = 'perdido';
+        result = 'perdidos';
         ++negativeScore;
     } else {
-        result = 'empatado';
+        result = 'empatados';
     }
 
     imgPlayerChoice.setAttribute('src', fileNames[playerChoice]);
